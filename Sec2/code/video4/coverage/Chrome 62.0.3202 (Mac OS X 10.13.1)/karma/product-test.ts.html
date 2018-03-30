@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for karma/product-test.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">karma/</a> product-test.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>18/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>9/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>17/17</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function(global){global.wrappers['/Users/tpiros/Desktop/fullstack-academy/videos/packt-ts/section02/code/karma/product-test.ts']=[function(require,module,exports,__dirname,__filename){ "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var product_1 = require("./product");
+describe('Product Unit test', function () {
+    var product;
+    beforeEach(function () {
+        product = new product_1.Product('football', 100);
+    });
+    it('should return the product name', function () {
+        expect(product.getName()).toBe('football');
+    });
+    it('should return the product price', function () {
+        expect(product.getPrice()).toBe(100);
+    });
+    it('should return the exact product price', function () {
+        expect(product.getPrice()).not.toBe(110);
+    });
+    it('should return 10% discount price', function () {
+        expect(product.getDiscountedPrice(10)).toBe(90);
+    });
+    it('should return 50% discount price', function () {
+        expect(product.getDiscountedPrice(50)).toBe(50);
+    });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJvZHVjdC10ZXN0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsicHJvZHVjdC10ZXN0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEscUNBQW9DO0FBRXBDLFFBQVEsQ0FBQyxtQkFBbUIsRUFBRTtJQUM1QixJQUFJLE9BQU8sQ0FBQztJQUNaLFVBQVUsQ0FBQztRQUNULE9BQU8sR0FBRyxJQUFJLGlCQUFPLENBQUMsVUFBVSxFQUFFLEdBQUcsQ0FBQyxDQUFDO0lBQ3pDLENBQUMsQ0FBQyxDQUFBO0lBRUYsRUFBRSxDQUFDLGdDQUFnQyxFQUFFO1FBQ25DLE1BQU0sQ0FBQyxPQUFPLENBQUMsT0FBTyxFQUFFLENBQUMsQ0FBQyxJQUFJLENBQUMsVUFBVSxDQUFDLENBQUM7SUFDN0MsQ0FBQyxDQUFDLENBQUM7SUFDSCxFQUFFLENBQUMsaUNBQWlDLEVBQUU7UUFDcEMsTUFBTSxDQUFDLE9BQU8sQ0FBQyxRQUFRLEVBQUUsQ0FBQyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUN2QyxDQUFDLENBQUMsQ0FBQztJQUNILEVBQUUsQ0FBQyx1Q0FBdUMsRUFBRTtRQUMxQyxNQUFNLENBQUMsT0FBTyxDQUFDLFFBQVEsRUFBRSxDQUFDLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUMzQyxDQUFDLENBQUMsQ0FBQztJQUNILEVBQUUsQ0FBQyxrQ0FBa0MsRUFBRTtRQUNyQyxNQUFNLENBQUMsT0FBTyxDQUFDLGtCQUFrQixDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLEVBQUUsQ0FBQyxDQUFDO0lBQ2xELENBQUMsQ0FBQyxDQUFDO0lBQ0gsRUFBRSxDQUFDLGtDQUFrQyxFQUFFO1FBQ3JDLE1BQU0sQ0FBQyxPQUFPLENBQUMsa0JBQWtCLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLENBQUM7SUFDbEQsQ0FBQyxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb2R1Y3QgfSBmcm9tICcuL3Byb2R1Y3QnO1xuXG5kZXNjcmliZSgnUHJvZHVjdCBVbml0IHRlc3QnLCAoKSA9PiB7XG4gIGxldCBwcm9kdWN0O1xuICBiZWZvcmVFYWNoKCgpID0+IHtcbiAgICBwcm9kdWN0ID0gbmV3IFByb2R1Y3QoJ2Zvb3RiYWxsJywgMTAwKTtcbiAgfSlcblxuICBpdCgnc2hvdWxkIHJldHVybiB0aGUgcHJvZHVjdCBuYW1lJywgKCkgPT4ge1xuICAgIGV4cGVjdChwcm9kdWN0LmdldE5hbWUoKSkudG9CZSgnZm9vdGJhbGwnKTtcbiAgfSk7XG4gIGl0KCdzaG91bGQgcmV0dXJuIHRoZSBwcm9kdWN0IHByaWNlJywgKCkgPT4ge1xuICAgIGV4cGVjdChwcm9kdWN0LmdldFByaWNlKCkpLnRvQmUoMTAwKTtcbiAgfSk7XG4gIGl0KCdzaG91bGQgcmV0dXJuIHRoZSBleGFjdCBwcm9kdWN0IHByaWNlJywgKCkgPT4ge1xuICAgIGV4cGVjdChwcm9kdWN0LmdldFByaWNlKCkpLm5vdC50b0JlKDExMCk7XG4gIH0pO1xuICBpdCgnc2hvdWxkIHJldHVybiAxMCUgZGlzY291bnQgcHJpY2UnLCAoKSA9PiB7XG4gICAgZXhwZWN0KHByb2R1Y3QuZ2V0RGlzY291bnRlZFByaWNlKDEwKSkudG9CZSg5MCk7XG4gIH0pO1xuICBpdCgnc2hvdWxkIHJldHVybiA1MCUgZGlzY291bnQgcHJpY2UnLCAoKSA9PiB7XG4gICAgZXhwZWN0KHByb2R1Y3QuZ2V0RGlzY291bnRlZFByaWNlKDUwKSkudG9CZSg1MCk7XG4gIH0pO1xufSk7Il19
+},'product-test.ts',{"./product":"/Users/tpiros/Desktop/fullstack-academy/videos/packt-ts/section02/code/karma/product.ts"}];})(this);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Nov 27 2017 17:16:26 GMT+0100 (CET)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

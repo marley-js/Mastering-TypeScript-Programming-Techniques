@@ -1,0 +1,15 @@
+{
+  "name": "video01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "callback.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/node": "^8.0.53"
+  }
+}
